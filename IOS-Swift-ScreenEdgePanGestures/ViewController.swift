@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Screen Edge Pan Gestures
-        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(rotateBall(_:)))   // Selector(("rotateBall:")))
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(ViewController.rotateBall(_:))) // #selector(rotateBall(_:)))   // Selector(("rotateBall:")))
         screenEdgeRecognizer.edges = .left
         view.addGestureRecognizer(screenEdgeRecognizer)
     }
